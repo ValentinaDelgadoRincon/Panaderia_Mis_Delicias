@@ -9,21 +9,19 @@ menu_principal = """
 """
 
 menu_Gestionar_Productos = """
-1. Registrar un nuevo producto.
-2. Listar todos los productos.
-3. Eliminar un producto.
-4. Volver al menú principal.
+1. Agregar un nuevo producto.
+2. Listar productos..
+3. Volver al menú principal.
 """
 
 menu_Gestionar_Pedidos = """
-1. Solicitar un nuevo pedido.
-2. Cancelar un pedido.
-3. Modificar un pedido.
-4. Volver al menú principal.
+1. crear pedidos.
+2. listar pedidos.
+3. Volver al menú principal.
 """
 
 menu_Inventario = """
-1. Modificar inventario.
-2. Listar inventario.
-3. Volver al menú principal.
+1. Mostrar inventario.
+2. Actualizar stock.
+3. Volver al menú principal.
 """

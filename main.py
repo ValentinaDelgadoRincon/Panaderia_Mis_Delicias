@@ -3,7 +3,6 @@ import productos
 import pedidos
 import inventario
 
-# Credenciales de administrador
 ADMIN_USUARIO = "panaderia"
 ADMIN_CONTRASEÑA = "1403"
 
@@ -25,21 +24,22 @@ def menu_principal():
     while True:
         mostrar_menu(menus.menu_principal)
         opcion = input("Seleccione una opción: ")
-
+        
         if opcion == "1":
-            productos.listar_productos()
+            productos.menu_buscar_producto()  # Aseguramos que se ejecute la búsqueda correctamente
         elif opcion == "2":
             productos.menu_gestionar_productos()
         elif opcion == "3":
             pedidos.menu_gestionar_pedidos()
         elif opcion == "4":
             if autenticar():
-                inventario.menu_inventario()
+             inventario.menu_inventario()
         elif opcion == "5":
-            print("Gracias por usar el sistema. ¡Hasta pronto!")
+            print("Saliendo del sistema...")
             break
         else:
-            print("Opción inválida. Intente nuevamente.")
+            print("Opción no válida. Intente nuevamente.")
 
-if _name_ == "_main_":
-    menu_principal()
+if __name__ == "__main__":
+    menu_principal() 
+   
